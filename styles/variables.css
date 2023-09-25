@@ -12,6 +12,7 @@
   --header-padding-top: clamp(120px, 6.1667rem + 5.3333vw, 136px);
   --main-color: #000;
   --background-color: #fff;
+  --heart-color: red;
   --background-image:
       repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
       repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),

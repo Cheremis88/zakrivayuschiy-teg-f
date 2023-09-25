@@ -12,8 +12,103 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+/* Анимация стрелки меню */
+
 @keyframes arrow-move {
   to {
     translate: 4px;
+  }
+}
+
+/* Исходные настройки иконки Like */
+
+.sparks {
+  opacity: 0;
+}
+
+.middle {
+  fill: transparent;
+  transition: 0.3s 0.05s;
+}
+
+.filler {
+  fill: transparent;
+  transition: 0.3s;
+}
+
+.stroke {
+  transition: 0.3s;
+}
+
+/* Анимация hover */
+
+.like-icon:hover .middle {
+  fill: var(--main-color);
+  transition: 0.3s;
+}
+
+.like-icon:hover .filler {
+  fill: var(--main-color);
+  transition: 0.3s 0.05s;
+}
+
+/* Анимация active */
+
+.like-icon:active .middle {
+  fill: var(--heart-color);
+  transition: 0.3s;
+}
+
+.like-icon:active .filler {
+  fill: var(--heart-color);
+  transition: 0.3s 0.05s;
+}
+
+/* Анимация при клике */
+
+.like-icon.is-liked .middle {
+  fill: var(--heart-color);
+  transition: 0.3s;
+}
+
+.like-icon.is-liked .filler {
+  fill: var(--heart-color);
+  transition: 0.3s 0.05s;
+}
+
+.like-icon.is-liked .stroke {
+  fill: var(--heart-color);
+  transition: 0.3s 0.05s;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-zoom 0.3s 0.1s ease-in;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s 0.2s ease-in;
+}
+
+@keyframes heart-zoom {
+  
+  50% {
+    scale: 1.5;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes sparks {
+  
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
