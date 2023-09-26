@@ -1,3 +1,16 @@
+/* 
+
+Уважаемый ревьюер, мы так много верстали на флексах и гридах, что я уже забыл,
+как обходиться без них. Поэтому старался в этой работе их не использовать,
+но всё равно чуть-чуть пришлось.
+
+Также попробовал сделать проект без медиазапросов ширины устройства. Не уверен,
+что это хорошая идея, но было интересно.
+
+Приятного ревью нам обоим ;)
+
+*/
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -17,7 +30,7 @@
 }
 
 .header {
-  margin-block: 102px 104px;
+  margin-block: 100px;
   padding-block: var(--header-padding-top) 25px;
   background-color: var(--background-color);
   border: 2px solid currentColor;
@@ -108,11 +121,11 @@
 .card {
   border: 2px solid currentColor;
   background-color: var(--background-color);
-  margin-block-end: 54px;
+  margin-block-end: 50px;
 }
 
 .card__title {
-  padding: 4px 10px;
+  padding: 3px 10px;
   font-size: var(--main-font-size);
   font-weight: 700;
   font-variation-settings: 'wght' var(--font-weight-article-title);
@@ -188,7 +201,7 @@
   inline-size: clamp(310px, 18.7148rem + 2.8169vw, 340px);
   border: 2px solid currentColor;
   padding-block: 15px;
-  margin: 0 auto 105px;
+  margin: 0 auto 100px;
   background-color: var(--background-color);
 }
 
