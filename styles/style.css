@@ -165,14 +165,17 @@
 
 .image-1 {
   object-position: 85% 100%;
+  filter: brightness(90%);
 }
 
 .image-2 {
   object-position: 100% 45%;
+  filter: saturate(170%);
 }
 
 .image-3 {
   object-position: 100% 55%;
+  filter: hue-rotate(0.9turn);
 }
 
 .image-4,
@@ -180,6 +183,22 @@
 .image-6,
 .image-7 {
   object-position: center;
+}
+
+.image-4 {
+  filter: opacity(0.8) blur(1px);
+}
+
+.image-5 {
+  filter: contrast(70%);
+}
+
+.image-6 {
+  filter: sepia(0.8) brightness(70%);
+}
+
+.image-7 {
+  filter: invert(90%) brightness(70%);
 }
 
 .image-8 {
