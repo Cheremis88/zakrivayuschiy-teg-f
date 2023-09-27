@@ -1,7 +1,7 @@
 :root {
   --width-content: clamp(360px, 100%, 700px);
   --main-font-family: Inter-Variable, sans-serif;
-  --accent-font-family: PressStart, monospace;
+  --accent-font-family: PressStart, fantasy;
   --main-font-size: 18px;
   --accent-font-size: 14px;
   --first-title-font-size: clamp(49px, 1.7292rem + 5.3333vw, 65px);
@@ -9,6 +9,7 @@
   --font-weight-article-text: 400;
   --font-weight-article-title: 700;
   --header-padding-top: clamp(120px, 6.1667rem + 5.3333vw, 136px);
+  --menu-margin-left: clamp(154px, 6.0819rem + 15.1174vw, 315px);
   --main-color: #000;
   --background-color: #fff;
   --heart-color: red;

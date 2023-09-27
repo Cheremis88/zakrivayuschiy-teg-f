@@ -18,10 +18,8 @@
   </head>
   <body class="page">
     <header class="header page__content">
-      <h1 class="header__title">
-        <span class="first-title">&lt;/Html&gt;</span>
-        <span class="second-title">Закрывающий тег</span>
-      </h1>
+      <h1 class="header__title">&lt;/Html&gt;</h1>
+      <p class="header__subtitle">Закрывающий тег</p>
       <nav class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -567,10 +565,11 @@
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button type="button" class="button dialog__button"
-          onclick="window['insert'].close()">
-          <span class="button__text">OK</span>
-        </button>
+        <form method="dialog">
+          <button class="button dialog__button">
+            <span class="button__text">OK</span>
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
