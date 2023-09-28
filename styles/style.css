@@ -317,3 +317,12 @@
     text-shadow: none;
   }
 }
+
+/* Убрать рамки по бокам контента при ширине окна, равном ширине контента */
+
+@media (width <= 700px) {
+  .header,
+  .card {
+    border-inline: none;
+  }
+}
